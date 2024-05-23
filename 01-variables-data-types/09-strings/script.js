@@ -20,4 +20,8 @@ x = s.indexOf('H')
 
 x = s.includes('Hello');
 
+x = s.valueOf();
+
+x = s.split('');
+
 console.log(x);
