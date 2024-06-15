@@ -1,14 +1,12 @@
-// setTimeout(changeText, 1000);
+// https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
 
-function changeText() {
-    document.querySelector('h1').textContent = 'Hello from callback';
-}
+const timerId = setTimeout(function () {
+  console.log('Hello');
+}, 1000);
 
-const timerId = setTimeout(changeText, 3000);
-
-// clearTimeout cancels setTimeout
+// console.log(timerId);
 document.querySelector('#cancel').addEventListener('click', () => {
-    console.log(timerId);
-    clearTimeout(timerId);
-    console.log('cancelled');
+  clearTimeout(timerId);
 });
+
+console.log('Halo');
