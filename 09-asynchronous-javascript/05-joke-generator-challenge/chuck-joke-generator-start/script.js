@@ -16,3 +16,4 @@ function joke() {
 }
 
 btn.addEventListener('click', joke);
+document.addEventListener('DOMContentLoaded', joke);
