@@ -6,3 +6,10 @@
    - Approach: Fetch
 
 ![alt text](images/p_1.png)
+
+2. Typicode Todos
+   - API: https://jsonplaceholder.typicode.com/
+   - Methods: GET, POST, PUT
+   - Approach: Fetch
+
+![alt text](images/p_2.png)
