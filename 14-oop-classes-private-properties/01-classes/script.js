@@ -1,22 +1,31 @@
 class Rectangle {
-    constructor(name, width, height) {
-        this.name = name;
-        this.width = width;
-        this.height = height;
-    }
+  constructor(name, width, height) {
+    this.name = name;
+    this.width = width;
+    this.height = height;
+  }
 
-    area() {
-        return this.height * this.width;
-    }
+  area() {
+    return this.height * this.width;
+  }
 
-    logArea() {
-        return `The area equals ${this.area()}`;
-    }
+  logArea() {
+    return `The area equals ${this.area()}`;
+  }
 }
 
 const square = new Rectangle('Square', 10, 10);
 
-console.log(square.area());
-console.log(square.logArea());
-console.log(square);
-// const square2 = new Rectangle();
+class arithmetic {
+  constructor(a, b) {
+    this.a = a;
+    this.b = b;
+  }
+
+  add() {
+    return this.a + this.b;
+  }
+}
+
+const add = new arithmetic(10, 20);
+console.log(add.add());

@@ -1,30 +1,30 @@
 // Parent Class
 class Shape {
-    constructor(name) {
-        this.name = name;
-    }
+  constructor(name) {
+    this.name = name;
+  }
 
-    logName() {
-        console.log(`Shape Name: ${this.name}`);
-    }
+  logName() {
+    console.log(`Shape Name: ${this.name}`);
+  }
 }
 
 // Sub Classes
 class Rectangle extends Shape {
-    constructor(name, height, width) {
-        super(name);
+  constructor(name, height, width) {
+    super(name);
 
-        this.height = height;
-        this.width = width;
-    }
+    this.height = height;
+    this.width = width;
+  }
 }
 
 class Circle extends Shape {
-    constructor(name, radius) {
-        super(name);
+  constructor(name, radius) {
+    super(name);
 
-        this.radius = radius;
-    }
+    this.radius = radius;
+  }
 }
 
 const rect = new Rectangle('Rect1', 10, 10);

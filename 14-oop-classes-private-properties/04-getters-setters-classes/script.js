@@ -1,35 +1,35 @@
 class Person {
-    constructor(firstName, lastName) {
-        this._firstName = firstName;
-        this._lastName = lastName;
-    }
+  constructor(firstName, lastName) {
+    this._firstName = firstName;
+    this._lastName = lastName;
+  }
 
-    // FirstName
-    get firstName() {
-        return this.capitalizeFirst(this._firstName);
-    }
+  // FirstName
+  get firstName() {
+    return this.capitalizeFirst(this._firstName);
+  }
 
-    set firstName(value) {
-        this._firstName = this.capitalizeFirst(value);
-    }
+  set firstName(value) {
+    this._firstName = this.capitalizeFirst(value);
+  }
 
-    // LastName
-    get lastName() {
-        return this.capitalizeFirst(this._lastName);
-    }
+  // LastName
+  get lastName() {
+    return this.capitalizeFirst(this._lastName);
+  }
 
-    set lastName(value) {
-        this._lastName = this.capitalizeFirst(value);
-    }
+  set lastName(value) {
+    this._lastName = this.capitalizeFirst(value);
+  }
 
-    // FullName
-    get fullName() {
-        return `${this.firstName} ${this.lastName}`;
-    }
+  // FullName
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
 
-    capitalizeFirst(value) {
-        return value.charAt(0).toUpperCase() + value.slice(1);
-    }
+  capitalizeFirst(value) {
+    return value.charAt(0).toUpperCase() + value.slice(1);
+  }
 }
 
 const person1 = new Person('john', 'doe');
